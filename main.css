@@ -1,0 +1,79 @@
+*, *::before, *::after, body, html{padding: 0; margin: 0; box-sizing: border-box;}
+body{font-family: sans-serif; /*height: 5000px;*/}
+input, button, textarea,span {
+    display: block;
+    margin: 20px;
+    outline: none;
+}
+.warn {
+    color: red;
+}
+.content{
+    background-color: #ddd;
+    /* max-width: 400px; */
+    /* min-height: 200px; */
+    /* overflow-x: scroll; */
+    color: #333;
+    padding: 15px 20px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+#countDown {
+    width: 100px;
+    background-color: #000;
+    color: #ddd;
+    border: 3px solid #ddd;
+    padding: 15px 20px;
+}
+#timing {width: 150px;}
+.blue {background-color: blue; color: rgb(168, 206, 30);}
+.red {background-color: red; color: rgb(36, 109, 54);}
+.tomato {background-color: tomato; color: rgb(80, 197, 13);}
+.black {background-color: black; color: #fff;}
+
+#top {
+    width: 0;
+    height: 0;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 10;
+    cursor: pointer;
+    border-color:  transparent transparent orangered transparent;
+    border-width: 0 40px 40px 40px;
+    border-style: solid;
+    display: none;
+}
+#random-slide{border: 5px solid #000;width: 400px;margin: auto;}
+img#random-img{width: 100%; cursor: pointer;}
+section#local-storage {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin: 30px 0;
+    padding: 20px;
+}
+ul.colors {
+    display: flex;
+    justify-content: center;
+
+}
+li.color {
+    display: inline-block;
+    margin-left: 10px;
+    list-style-type: none;
+    width: 50px;
+    height: 50px;
+}
+li.color:first-child {background-color: red;}
+li.color:nth-child(2) {background-color: blue;}
+li.color:nth-child(3) {background-color: green;}
+li.color:nth-child(4) {background-color: yellow;}
+section#local-storage.red{background-color: red;}
+section#local-storage.blue{background-color: blue;}
+section#local-storage.green{background-color: green;}
+section#local-storage.yellow{background-color: yellow;}
